@@ -14,12 +14,13 @@ insert into departments("id","name") values(104,'Electrical Engineering');
 insert into departments("id","name") values(105,'Instrumentation Engineering');
 
 --insertion into teachers table
-insert into teachers("id","name","dept_id") values(1,'Erin Santos',101);
-insert into teachers("id","name","dept_id") values(2,'Walker Conley',102);
-insert into teachers("id","name","dept_id") values(3,'Salem Gonzalez',103);
-insert into teachers("id","name","dept_id") values(4,'Ethan Bautista',104);
-insert into teachers("id","name","dept_id") values(5,'Fox Carson',105);
-insert into teachers("id","name","dept_id") values(6,'Nalani Barrera',101);
+insert into teachers("id","name","dept_id", "username") values(1,'Erin Santos',101, 'erinsantos');
+insert into teachers("id","name","dept_id", "username") values(2,'Walker Conley',102, 'walkerconley');
+insert into teachers("id","name","dept_id", "username") values(3,'Salem Gonzalez',103, 'salemgonzalez');
+insert into teachers("id","name","dept_id", "username") values(4,'Ethan Bautista',104, 'ethanbautista');
+insert into teachers("id","name","dept_id", "username") values(5,'Fox Carson',105, 'foxcarson');
+insert into teachers("id","name","dept_id", "username") values(6,'Nalani Barrera',101, 'nalanibarrera');
+insert into teachers("id","name","dept_id", "username") values(7,'Rupam Baruah',101, 'rupambaruah');
 
 --insertion into students
 insert into students("roll_number","name","dept_id","semester") values('1001','kuldeep singh',101,7);
@@ -36,9 +37,10 @@ insert into students("roll_number","name","dept_id","semester") values('5002','d
 insert into subjects("id","name","dept_id","semester","teacher_id") values('CSE1817PE41','Cloud Computing',101,7,1);
 insert into subjects("id","name","dept_id","semester","teacher_id") values('ME181701','Vibration of Mechanical Systems',102,7,2);
 insert into subjects("id","name","dept_id","semester","teacher_id") values('CE181701','Quantity Surveying',103,7,3);
-insert into subjects("id","name","dept_id","semester","teacher_id") values('EE181701','Power System-IV',104,7,4);
+insert into subjects("id","name","dept_id","semester","teacher_id") values('CSE181701','Database Management Systems',101,7,7);
 insert into subjects("id","name","dept_id","semester","teacher_id") values('IE181701','Telemetry and Tele Control',105,7,5);
 insert into subjects("id","name","dept_id","semester","teacher_id") values('CSE1817OE21','Machhine Learning',101,7,6);
+insert into subjects("id","name","dept_id","semester","teacher_id") values('CSE181301','Data Structures and Algorithms',101,7,7);
 
 -- insertion into attendance table
 insert into attendance("roll_number","subject_id","date","present") values('1001','CSE1817PE41','08-11-2023',true);

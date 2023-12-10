@@ -32,6 +32,7 @@ insert into students("roll_number","name","dept_id","semester") values('3002','r
 insert into students("roll_number","name","dept_id","semester") values('2002','randeep gogoi',102,7);
 insert into students("roll_number","name","dept_id","semester") values('1002','rajiv das',101,7);
 insert into students("roll_number","name","dept_id","semester") values('5002','disha malhotra',105,7);
+insert into students("roll_number","name","dept_id","semester") values('1004','raj das',101,7);
 
 --insertion into subjects
 insert into subjects("id","name","dept_id","semester","teacher_id") values('CSE1817PE41','Cloud Computing',101,7,1);
@@ -43,9 +44,13 @@ insert into subjects("id","name","dept_id","semester","teacher_id") values('CSE1
 insert into subjects("id","name","dept_id","semester","teacher_id") values('CSE181301','Data Structures and Algorithms',101,7,7);
 
 -- insertion into attendance table
-insert into attendance("roll_number","subject_id","date","present") values('1001','CSE1817PE41','08-11-2023',true);
-insert into attendance("roll_number","subject_id","date","present") values('2001','ME181701','08-11-2023',true);
-insert into attendance("roll_number","subject_id","date","present") values('3001','CE181701','08-11-2023',true);
-insert into attendance("roll_number","subject_id","date","present") values('4001','EE181701','08-11-2023',true);
-insert into attendance("roll_number","subject_id","date","present") values('5001','IE181701','08-11-2023',true);
-insert into attendance("roll_number","subject_id","date","present") values('3002','CE181701','08-11-2023',true);
+insert into attendance("id", "roll_number","subject_id","date","present") values(1, '1001','CSE1817PE41','2023-11-08',true);
+insert into attendance("id", "roll_number","subject_id","date","present") values(2, '1002','CSE1817PE41','2023-11-08',true);
+insert into attendance("id", "roll_number","subject_id","date","present") values(3, '2001','ME181701','2023-11-08',true);
+insert into attendance("id", "roll_number","subject_id","date","present") values(4, '3001','CE181701','2023-11-08',true);
+insert into attendance("id", "roll_number","subject_id","date","present") values(5, '1002','CSE181301','2023-11-08',true);
+insert into attendance("id", "roll_number","subject_id","date","present") values(6, '5001','IE181701','2023-11-08',true);
+insert into attendance("id", "roll_number","subject_id","date","present") values(7, '3002','CE181701','2023-11-08',true);
+insert into attendance("id", "roll_number","subject_id","date","present") values(8, '1004','CSE1817PE41','2023-11-08',true);
+insert into attendance("id", "roll_number","subject_id","date","present") values(9, '1002','CSE181301','2023-11-12',true);
+insert into attendance("id", "roll_number","subject_id","date","present") values(10, '1002','CSE1817PE41','2023-11-12',true);

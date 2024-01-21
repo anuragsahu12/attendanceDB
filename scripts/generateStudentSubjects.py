@@ -45,7 +45,7 @@ for roll_number in branch_transfer:
 
 # ------------ Lateral ------------------
 for i in range(1, 7):
-    roll_number = f'200750007{str(i).zfill(3)}'
+    roll_number = f'2100750007{str(i).zfill(3)}'
     
     # Common subjects for all students
     for subject in common_subjects:
